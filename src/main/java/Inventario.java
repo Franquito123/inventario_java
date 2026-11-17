@@ -1,13 +1,9 @@
 public class Inventario {
-    
-    
-    public static int calcularValorTotal(int precio, int cantidad) {
-        return precio + cantidad;
-    }   
+    public int calcularResta(int a, int b) {
+        return a + b ;// 180 - 93 = 87
+    }
     public static void main(String[] args) {
-        int precio = 50;
-        int cantidad = 4;
-        int valorTotal = calcularValorTotal(precio, cantidad);
-        System.out.println("Subtotal: " + valorTotal);
+        Inventario inv = new Inventario();
+        System.out.println("Resultado resta: " + inv.calcularResta(180, 93));
     }
 }

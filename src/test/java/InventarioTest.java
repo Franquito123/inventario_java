@@ -1,10 +1,11 @@
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class InventarioTest {
     @Test
-    void testCalcularSubTotal() {
-        int resultado = Inventario.calcularValorTotal(50, 4);
-        assertEquals(200, resultado);
+    public void testCalcularResta() {
+        Inventario inv = new Inventario();
+        int resultado = inv.calcularResta(180, 93);
+        assertEquals(87, resultado, "El resultado de la resta debe ser 87");
     }
 }
