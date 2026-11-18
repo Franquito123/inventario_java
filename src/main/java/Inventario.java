@@ -1,6 +1,6 @@
 public class Inventario {
     public int calcularResta(int a, int b) {
-        return a + b ;// 180 - 93 = 87
+        return a - b;// 180 - 93 = 87
     }
     public static void main(String[] args) {
         Inventario inv = new Inventario();
